@@ -90,7 +90,7 @@ class Ui_MainWindow(object):
     #Connect with app
     
     def result(self):
-        self.rsa = RSA(keysize=32)
+        self.rsa = RSA(keysize=40)
         msg = self.message.toPlainText()
 
         enc=self.rsa.encrypt(msg)
@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         self.N1.setText(str(self.rsa.N))
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Hệ mật RSA"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "RSA"))
         self.pushButton.setText(_translate("MainWindow", "Generate"))
         self.label.setText(_translate("MainWindow", "Message"))
         self.label_2.setText(_translate("MainWindow", "p"))
@@ -117,8 +117,8 @@ class Ui_MainWindow(object):
         self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600;\">Hệ mật RSA</span></p></body></html>"))
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:400;\">RSA</span></p></body></html>"))
     
         
     
