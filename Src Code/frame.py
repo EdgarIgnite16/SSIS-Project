@@ -121,8 +121,6 @@ class Ui_MainWindow(object):
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:400;\">RSA</span></p></body></html>"))
     
         
-    
-    
 
 if __name__ == "__main__":
     import sys

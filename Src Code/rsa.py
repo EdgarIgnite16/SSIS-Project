@@ -171,7 +171,7 @@ class RSA(object):
 
 
 if __name__ == "__main__":
-    print("Hệ mật RSA-Nhóm 12")
+    print("Hệ mật RSA")
 
     msg = input("Nhập message: ")
     rsa = RSA(keysize=32)
