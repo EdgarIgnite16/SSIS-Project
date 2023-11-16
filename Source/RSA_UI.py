@@ -195,7 +195,7 @@ class Ui_MainWindow(object):
 
 # Kết nối với lại file giải thuật RSA
     def result(self):
-        self.rsa = RSA(keysize=40)
+        self.rsa = RSA(keysize=8) # Keysize mặc định là 8
         msg = self.txtInput.toPlainText()
         enc = self.rsa.encrypt(msg)
         dec = self.rsa.decrypt(enc)
