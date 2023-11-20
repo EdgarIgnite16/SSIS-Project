@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>641</height>
+    <height>680</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -110,7 +110,7 @@ tin nhắn</string>
      <x>10</x>
      <y>190</y>
      <width>581</width>
-     <height>441</height>
+     <height>481</height>
     </rect>
    </property>
    <property name="title">
@@ -198,11 +198,52 @@ tin nhắn</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="lbE">
+   <widget class="QLabel" name="lbphiN">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>100</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ΦN</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtPhiN">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>441</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbE">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
       <width>101</width>
       <height>30</height>
      </rect>
@@ -220,11 +261,11 @@ tin nhắn</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QTextEdit" name="txtE">
+   <widget class="QTextEdit" name="txtxE">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>100</y>
+      <y>140</y>
       <width>441</width>
       <height>30</height>
      </rect>
@@ -243,7 +284,7 @@ tin nhắn</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>140</y>
+      <y>180</y>
       <width>101</width>
       <height>30</height>
      </rect>
@@ -262,47 +303,6 @@ tin nhắn</string>
     </property>
    </widget>
    <widget class="QTextEdit" name="txtD">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>140</y>
-      <width>441</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>JetBrains Mono</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbN">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>180</y>
-      <width>101</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>JetBrains Mono</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>N</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txtN">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -325,7 +325,7 @@ tin nhắn</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>220</y>
+      <y>260</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -348,7 +348,7 @@ tin nhắn</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>220</y>
+      <y>260</y>
       <width>441</width>
       <height>100</height>
      </rect>
@@ -367,7 +367,7 @@ tin nhắn</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>330</y>
+      <y>370</y>
       <width>101</width>
       <height>101</height>
      </rect>
@@ -390,9 +390,50 @@ tin nhắn</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>330</y>
+      <y>370</y>
       <width>441</width>
       <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbN">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>101</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>N</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtN">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>441</width>
+      <height>30</height>
      </rect>
     </property>
     <property name="font">

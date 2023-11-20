@@ -94,7 +94,7 @@ def generateKeys(keysize=1024):
     # d is mod inv of e with respect to phiN, e * d (mod phiN) = 1
     d = modularInv(e, phiN)
 
-    return p, q, e, d, N
+    return p, q, e, d, N, phiN
 
 
 def isCoPrime(p, q):
@@ -147,7 +147,7 @@ class RSA(object):
 
     def __init__(self, keysize=1024):
         self.keysize = keysize
-        self.p, self.q, self.e, self.d, self.N = generateKeys(self.keysize)
+        self.p, self.q, self.e, self.d, self.N, self.phiN = generateKeys(self.keysize)
 
     def encrypt(self, msg):
         cipher = ""
@@ -181,6 +181,7 @@ if __name__ == "__main__":
     print(f"Message: {msg}")
     print(f"e: {rsa.e}")
     print(f"d: {rsa.d}")
+    print(f"phiN: {rsa.phiN}")
     print(f"N: {rsa.N}")
     print(f"enc: {enc}")
     print(f"dec: {dec}")
