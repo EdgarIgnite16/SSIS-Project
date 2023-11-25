@@ -202,12 +202,12 @@ class Ui_MainWindow(object):
         self.gbtnResult.setTitle(_translate("MainWindow", "Kết quả"))
         self.lbP.setText(_translate("MainWindow", "p"))
         self.lbQ.setText(_translate("MainWindow", "q"))
-        self.lbphiN.setText(_translate("MainWindow", "ΦN"))
+        self.lbphiN.setText(_translate("MainWindow", "Φ(n)"))
         self.lbE.setText(_translate("MainWindow", "e"))
         self.lbD.setText(_translate("MainWindow", "d"))
         self.lbEnc.setText(_translate("MainWindow", "mã hóa\n""(Encryption)"))
         self.lbDes.setText(_translate("MainWindow", "Giải mã\n""(Descryption)"))
-        self.lbN.setText(_translate("MainWindow", "N"))
+        self.lbN.setText(_translate("MainWindow", "n"))
         self.btnClean.setText(_translate("MainWindow", "Xóa tin nhắn"))
 
 # Kết nối với lại file giải thuật RSA
